@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Sattvalya Saar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Lora', serif;
+        }
+        .hindi-text {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: '#2C4C3B',
+                        sage: '#7A907C',
+                        gold: '#D49A36',
+                        cream: '#F9F6F0',
+                        bark: '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-cream via-white to-cream min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-2xl w-full text-center">
+        <!-- Success Icon -->
+        <div class="mb-8 relative">
+            <div class="w-32 h-32 mx-auto bg-gradient-to-br from-forest to-sage rounded-full flex items-center justify-center shadow-2xl animate-bounce">
+                <i class="fas fa-check text-white text-6xl"></i>
+            </div>
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-40 h-40 bg-gold/20 rounded-full blur-3xl -z-10"></div>
+        </div>
+
+        <!-- Thank You Message -->
+        <h1 class="text-5xl font-bold text-forest mb-4">
+            🙏 Thank You!
+        </h1>
+        <p class="text-2xl text-sage mb-6 hindi-text">
+            धन्यवाद
+        </p>
+
+        <div class="bg-white rounded-3xl shadow-xl p-8 mb-8 border-2 border-sage/20">
+            <p class="text-xl text-bark mb-4">
+                Your consultation request has been received successfully.
+            </p>
+            <p class="text-lg text-bark/70 mb-6">
+                <strong>Vaidya Neha</strong> will review your request and get back to you within <strong>24 hours</strong> to schedule your personalized consultation.
+            </p>
+
+            <div class="bg-cream rounded-2xl p-6 mb-6">
+                <p class="text-sm text-bark/60 mb-4">
+                    <i class="fas fa-lightbulb text-gold mr-2"></i>
+                    <strong>What happens next?</strong>
+                </p>
+                <ul class="text-left text-sm text-bark/70 space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-sage mr-3 mt-1"></i>
+                        <span>We'll confirm your appointment time via email/WhatsApp</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-sage mr-3 mt-1"></i>
+                        <span>You'll receive preparation guidelines for your consultation</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-sage mr-3 mt-1"></i>
+                        <span>For online consultations, we'll send you the video call link</span>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="text-sm text-bark/60 italic">
+                "The journey of a thousand miles begins with a single step towards healing."
+            </p>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <a href="index.html" class="bg-gradient-to-r from-forest to-sage text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center justify-center">
+                <i class="fas fa-home mr-2"></i>
+                Back to Home
+            </a>
+            <a href="https://wa.me/919876543210?text=Hi,%20I%20just%20submitted%20a%20consultation%20request.%20I%20have%20a%20question..." class="bg-gold hover:bg-gold/90 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center justify-center">
+                <i class="fab fa-whatsapp mr-2"></i>
+                Message on WhatsApp
+            </a>
+        </div>
+
+        <!-- Decorative Element -->
+        <div class="text-gold text-4xl mb-4">
+            <span class="hindi-text">ॐ</span>
+        </div>
+
+        <p class="text-sm text-bark/50">
+            Sattvalya Saar | सत्वल्य सार<br/>
+            <span class="hindi-text">शुद्धता, संतुलन, और आंतरिक शांति का मार्ग</span>
+        </p>
+    </div>
+
+    <script>
+        // Auto-redirect after 10 seconds (optional)
+        setTimeout(() => {
+            const countdown = document.createElement('p');
+            countdown.className = 'fixed bottom-4 right-4 bg-forest text-white px-4 py-2 rounded-lg text-sm shadow-lg';
+            countdown.innerHTML = '<i class="fas fa-clock mr-2"></i>Redirecting to home in <span id="countdown">10</span>s...';
+            document.body.appendChild(countdown);
+
+            let seconds = 10;
+            const interval = setInterval(() => {
+                seconds--;
+                document.getElementById('countdown').textContent = seconds;
+                if (seconds <= 0) {
+                    clearInterval(interval);
+                    window.location.href = 'index.html';
+                }
+            }, 1000);
+        }, 2000);
+    </script>
+</body>
+</html>
