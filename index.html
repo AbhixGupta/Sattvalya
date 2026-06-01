@@ -375,9 +375,17 @@
             </svg>
         </div>
 
-        <!-- Animated gradient orbs -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-sage/10 to-transparent rounded-full blur-3xl breathe-animation"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-gold/5 to-transparent rounded-full blur-3xl breathe-animation" style="animation-delay: 2s;"></div>
+        <!-- Organic blob shapes instead of circles -->
+        <div class="absolute top-0 right-0 w-96 h-96 opacity-10 breathe-animation">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40,30 Q60,10 90,20 T140,40 Q160,70 150,100 T120,150 Q80,170 50,150 T20,100 Q10,60 40,30" fill="#7A907C" />
+            </svg>
+        </div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 opacity-8 breathe-animation" style="animation-delay: 2s;">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50,40 Q80,20 110,35 T150,70 Q165,100 145,130 T100,165 Q65,175 40,145 T25,90 Q20,60 50,40" fill="#D49A36" />
+            </svg>
+        </div>
         <div class="container mx-auto max-w-7xl relative z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
@@ -447,6 +455,20 @@
                 <div class="relative fade-in">
                     <!-- Transparent gradient background container -->
                     <div class="relative bg-gradient-to-br from-white/60 via-cream/40 to-sage/10 backdrop-blur-sm rounded-3xl p-8 border border-sage/10">
+                        <!-- Watercolor Texture Background -->
+                        <div class="absolute inset-0 opacity-8 pointer-events-none rounded-3xl overflow-hidden">
+                            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <filter id="watercolorHero">
+                                        <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="4" />
+                                        <feDisplacementMap in="SourceGraphic" scale="15" />
+                                    </filter>
+                                </defs>
+                                <ellipse cx="20%" cy="30%" rx="150" ry="120" fill="#D49A36" opacity="0.3" filter="url(#watercolorHero)" />
+                                <ellipse cx="80%" cy="70%" rx="180" ry="140" fill="#E8A84D" opacity="0.2" filter="url(#watercolorHero)" />
+                            </svg>
+                        </div>
+
                         <!-- Decorative corner elements -->
                         <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-gold/5 to-transparent rounded-full blur-3xl"></div>
                         <div class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-sage/5 to-transparent rounded-full blur-3xl"></div>
@@ -515,22 +537,25 @@
 
     <!-- Sanskrit Shloka Section - DARKER BACKGROUND FOR BETTER CONTRAST -->
     <section class="py-20 px-6 bg-gradient-to-br from-forest via-[#355842] to-forest text-white relative overflow-hidden">
-        <!-- Floating Om Symbols -->
-        <div class="om-float" style="left: 10%;">ॐ</div>
-        <div class="om-float" style="left: 25%;">ॐ</div>
-        <div class="om-float" style="left: 50%;">ॐ</div>
-        <div class="om-float" style="left: 75%;">ॐ</div>
-        <div class="om-float" style="left: 90%;">ॐ</div>
 
-        <!-- Falling Lotus Petals -->
-        <div class="petal-fall" style="left: 15%;">🌸</div>
-        <div class="petal-fall" style="left: 35%;">🌸</div>
-        <div class="petal-fall" style="left: 55%;">🌸</div>
-        <div class="petal-fall" style="left: 70%;">🌸</div>
-        <div class="petal-fall" style="left: 88%;">🌸</div>
+        <!-- Watercolor Effect Behind Om - Orange/Golden Splash -->
+        <div class="absolute top-20 left-1/2 transform -translate-x-1/2 w-96 h-96 opacity-15 pointer-events-none">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="watercolor">
+                        <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="5" />
+                        <feDisplacementMap in="SourceGraphic" scale="20" />
+                    </filter>
+                </defs>
+                <!-- Organic watercolor blobs -->
+                <ellipse cx="100" cy="80" rx="80" ry="70" fill="#D49A36" opacity="0.6" filter="url(#watercolor)" />
+                <ellipse cx="120" cy="100" rx="60" ry="80" fill="#E8A84D" opacity="0.5" filter="url(#watercolor)" />
+                <ellipse cx="80" cy="110" rx="70" ry="60" fill="#C98D2E" opacity="0.4" filter="url(#watercolor)" />
+            </svg>
+        </div>
 
-        <!-- Divine Light Rays in Background - MORE VISIBLE -->
-        <div class="absolute inset-0 divine-light opacity-30">
+        <!-- Divine Light Rays in Background -->
+        <div class="absolute inset-0 divine-light opacity-20">
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-3xl">
                 <svg viewBox="0 0 200 200" class="w-full h-full">
                     <defs>
@@ -661,6 +686,174 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Know Your Dosha Section -->
+    <section class="py-20 px-6 bg-gradient-to-br from-cream via-white to-cream relative overflow-hidden">
+        <div class="container mx-auto max-w-7xl">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <div class="inline-block bg-sage/10 text-forest px-4 py-2 rounded-full mb-4">
+                    <i class="fas fa-yin-yang text-gold mr-2"></i>
+                    <span class="text-sm font-medium">आयुर्वेदिक ज्ञान | Ayurvedic Wisdom</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-forest mb-4">
+                    Know Your Dosha
+                </h2>
+                <p class="text-xl text-bark/70 max-w-3xl mx-auto hindi-text mb-2">
+                    अपना दोष जानें
+                </p>
+                <p class="text-lg text-bark/60 max-w-3xl mx-auto">
+                    Discover your unique mind-body constitution and understand what keeps you balanced
+                </p>
+            </div>
+
+            <!-- Dosha Cards -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Vata Card -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover-lift border-2 border-sage/20 relative overflow-hidden">
+                    <!-- Watercolor background -->
+                    <div class="absolute top-0 right-0 w-48 h-48 opacity-10">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="50" cy="30" rx="40" ry="30" fill="#A8B9D4" />
+                            <ellipse cx="60" cy="50" rx="35" ry="40" fill="#C4D7ED" />
+                        </svg>
+                    </div>
+
+                    <div class="relative z-10">
+                        <!-- Vata Illustration - Wind/Air Symbol -->
+                        <div class="w-24 h-24 mx-auto mb-6">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing wind lines -->
+                                <path d="M20,30 Q40,25 60,30" stroke="#5B6B7C" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <path d="M15,45 Q50,38 85,45" stroke="#5B6B7C" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                <path d="M20,60 Q40,55 60,60" stroke="#5B6B7C" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <path d="M25,75 Q50,70 75,75" stroke="#5B6B7C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                                <!-- Swirls -->
+                                <circle cx="65" cy="30" r="3" fill="#7A907C" opacity="0.6"/>
+                                <circle cx="90" cy="45" r="4" fill="#7A907C" opacity="0.5"/>
+                                <circle cx="65" cy="60" r="2.5" fill="#7A907C" opacity="0.6"/>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-3xl font-bold text-forest mb-2 text-center">Vata</h3>
+                        <p class="text-center text-sage mb-4 hindi-text">वात</p>
+                        <p class="text-sm text-gold font-semibold text-center mb-4">Air + Ether | The Creative Force</p>
+
+                        <div class="space-y-3 mb-6">
+                            <p class="text-sm text-bark/80"><strong>Characteristics:</strong> Creative, energetic, quick-thinking, scattered thoughts, insomnia, anxiety</p>
+                            <p class="text-sm text-bark/80"><strong>Remedy:</strong> Warmth, routine, grounding practices, regular meals, oil massage</p>
+                        </div>
+
+                        <div class="bg-cream rounded-xl p-3">
+                            <p class="text-xs text-bark/70 italic text-center">
+                                "When balanced, Vata brings creativity and vitality"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pitta Card -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover-lift border-2 border-gold/30 relative overflow-hidden">
+                    <!-- Watercolor background -->
+                    <div class="absolute top-0 right-0 w-48 h-48 opacity-10">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="50" cy="30" rx="40" ry="30" fill="#E8A84D" />
+                            <ellipse cx="60" cy="50" rx="35" ry="40" fill="#F4B968" />
+                        </svg>
+                    </div>
+
+                    <div class="relative z-10">
+                        <!-- Pitta Illustration - Fire Symbol -->
+                        <div class="w-24 h-24 mx-auto mb-6">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flame -->
+                                <path d="M50,20 Q40,40 50,60 Q60,40 50,20" fill="#D49A36" opacity="0.7"/>
+                                <path d="M50,30 Q45,45 50,55 Q55,45 50,30" fill="#E8A84D" opacity="0.8"/>
+                                <path d="M50,35 Q47,43 50,50 Q53,43 50,35" fill="#F4B968"/>
+                                <!-- Inner flame -->
+                                <ellipse cx="50" cy="45" rx="3" ry="5" fill="#FFF4E6" opacity="0.9"/>
+                                <!-- Sparks -->
+                                <circle cx="40" cy="35" r="2" fill="#D49A36" opacity="0.6"/>
+                                <circle cx="60" cy="38" r="1.5" fill="#E8A84D" opacity="0.7"/>
+                                <circle cx="45" cy="25" r="1.8" fill="#D49A36" opacity="0.5"/>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-3xl font-bold text-forest mb-2 text-center">Pitta</h3>
+                        <p class="text-center text-gold mb-4 hindi-text">पित्त</p>
+                        <p class="text-sm text-gold font-semibold text-center mb-4">Fire + Water | The Transformative Force</p>
+
+                        <div class="space-y-3 mb-6">
+                            <p class="text-sm text-bark/80"><strong>Characteristics:</strong> Focused, ambitious, sharp intellect, irritability, inflammation, acid reflux</p>
+                            <p class="text-sm text-bark/80"><strong>Remedy:</strong> Cooling foods, letting go, moonlight, avoiding spicy foods, meditation</p>
+                        </div>
+
+                        <div class="bg-cream rounded-xl p-3">
+                            <p class="text-xs text-bark/70 italic text-center">
+                                "When balanced, Pitta brings intelligence and leadership"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kapha Card -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover-lift border-2 border-sage/20 relative overflow-hidden">
+                    <!-- Watercolor background -->
+                    <div class="absolute top-0 right-0 w-48 h-48 opacity-10">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="50" cy="30" rx="40" ry="30" fill="#7A907C" />
+                            <ellipse cx="60" cy="50" rx="35" ry="40" fill="#A8B9A8" />
+                        </svg>
+                    </div>
+
+                    <div class="relative z-10">
+                        <!-- Kapha Illustration - Earth/Water Symbol -->
+                        <div class="w-24 h-24 mx-auto mb-6">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Mountain/Earth -->
+                                <path d="M20,70 L40,40 L50,50 L60,35 L80,70 Z" fill="#7A907C" opacity="0.6"/>
+                                <path d="M30,70 L45,50 L55,55 L70,70 Z" fill="#8FA68F" opacity="0.7"/>
+                                <!-- Water drops -->
+                                <ellipse cx="35" cy="55" rx="3" ry="4" fill="#A8B9A8" opacity="0.8"/>
+                                <ellipse cx="50" cy="45" rx="2.5" ry="3.5" fill="#A8B9A8" opacity="0.7"/>
+                                <ellipse cx="65" cy="50" rx="3" ry="4" fill="#A8B9A8" opacity="0.8"/>
+                                <!-- Lotus -->
+                                <ellipse cx="50" cy="30" rx="8" ry="4" fill="#7A907C" opacity="0.5"/>
+                                <ellipse cx="45" cy="28" rx="6" ry="3" fill="#8FA68F" opacity="0.6" transform="rotate(-30 45 28)"/>
+                                <ellipse cx="55" cy="28" rx="6" ry="3" fill="#8FA68F" opacity="0.6" transform="rotate(30 55 28)"/>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-3xl font-bold text-forest mb-2 text-center">Kapha</h3>
+                        <p class="text-center text-sage mb-4 hindi-text">कफ</p>
+                        <p class="text-sm text-sage font-semibold text-center mb-4">Earth + Water | The Stable Force</p>
+
+                        <div class="space-y-3 mb-6">
+                            <p class="text-sm text-bark/80"><strong>Characteristics:</strong> Calm, loving, steady, heaviness, lethargy, weight gain, congestion</p>
+                            <p class="text-sm text-bark/80"><strong>Remedy:</strong> Movement, stimulation, spicy foods, new experiences, vigorous exercise</p>
+                        </div>
+
+                        <div class="bg-cream rounded-xl p-3">
+                            <p class="text-xs text-bark/70 italic text-center">
+                                "When balanced, Kapha brings stability and compassion"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center">
+                <p class="text-lg text-bark/80 mb-6">
+                    Understanding your dosha is the first step toward personalized healing
+                </p>
+                <a href="#contact" class="inline-flex items-center bg-gradient-to-r from-forest to-sage text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl transition-all duration-300">
+                    <i class="fas fa-calendar-check mr-2"></i>
+                    Book Dosha Consultation
+                </a>
             </div>
         </div>
     </section>
