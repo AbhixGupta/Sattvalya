@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #f0f0f0;
+        }
+        .test-box {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 300px;
+            border: 3px solid #2C4C3B;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vaidya Photo Test</h1>
+
+    <div class="test-box">
+        <h2>✅ Test: Direct Image Path</h2>
+        <img src="vaidya-photo.jpg" alt="Vaidya Photo">
+        <p id="status1">Loading...</p>
+    </div>
+
+    <script>
+        const img = document.querySelector('img');
+        const status = document.getElementById('status1');
+
+        img.onload = function() {
+            status.innerHTML = '✅ <strong>SUCCESS!</strong> Image loaded correctly!<br>Dimensions: ' + this.naturalWidth + 'x' + this.naturalHeight;
+            status.style.color = 'green';
+        };
+
+        img.onerror = function() {
+            status.innerHTML = '❌ <strong>FAILED!</strong> Image could not load.<br>Check console for errors (F12).';
+            status.style.color = 'red';
+        };
+    </script>
+</body>
+</html>

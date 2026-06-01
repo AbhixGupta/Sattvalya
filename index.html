@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sattvalya Saar | सत्वल्य सार - Authentic Ayurvedic Healing with Vaidya Neha</title>
+    <meta name="description" content="Sattvalya Saar - Expert Ayurvedic treatment by Vaidya Neha for diabetes, hypertension, obesity, fatty liver, cirrhosis, and jaundice. Root-cause healing through authentic Panchakarma and personalized therapies.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F9F6F0',
+                        sage: '#7A907C',
+                        forest: '#2C4C3B',
+                        gold: '#D49A36',
+                        bark: '#333333',
+                        lightSage: '#A8B9A8',
+                    },
+                    fontFamily: {
+                        serif: ['Lora', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        hindi: ['Noto Sans Devanagari', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9F6F0;
+            color: #333333;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lora', serif;
+        }
+
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(44, 76, 59, 0.95) 0%, rgba(122, 144, 124, 0.9) 100%);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #2C4C3B 0%, #7A907C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #D49A36 0%, #B8842E 100%);
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(44, 76, 59, 0.15);
+        }
+
+        .leaf-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 15c-8 0-15 7-15 15 0 8 7 15 15 15 8 0 15-7 15-15 0-8-7-15-15-15zm0 2c7.2 0 13 5.8 13 13s-5.8 13-13 13-13-5.8-13-13 5.8-13 13-13z' fill='%237A907C' fill-opacity='0.03'/%3E%3C/svg%3E");
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .nav-sticky {
+            transition: all 0.3s ease;
+        }
+
+        .nav-sticky.scrolled {
+            background-color: rgba(249, 246, 240, 0.98);
+            box-shadow: 0 4px 20px rgba(44, 76, 59, 0.1);
+        }
+
+        .pulse-gentle {
+            animation: pulseGentle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulseGentle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .hindi-text {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+
+        .shloka-box {
+            background: linear-gradient(135deg, rgba(249, 246, 240, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+            border-left: 4px solid #D49A36;
+        }
+
+        /* Floating Animation for Logo */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* Breathing/Glow Animation */
+        @keyframes breathe {
+            0%, 100% {
+                opacity: 0.6;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+
+        /* Mandala Pattern Rotation */
+        @keyframes rotatePattern {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .breathe-animation {
+            animation: breathe 4s ease-in-out infinite;
+        }
+
+        .rotate-slow {
+            animation: rotatePattern 120s linear infinite;
+        }
+
+        /* Ayurvedic Mandala Pattern */
+        .mandala-pattern {
+            background-image:
+                radial-gradient(circle at 20% 30%, rgba(122, 144, 124, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(212, 154, 54, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(44, 76, 59, 0.02) 0%, transparent 70%);
+            background-size: 400px 400px, 350px 350px, 500px 500px;
+        }
+
+        /* Sacred Geometry Pattern Overlay */
+        .sacred-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%237A907C' stroke-width='0.5' opacity='0.1'%3E%3Ccircle cx='50' cy='50' r='30'/%3E%3Ccircle cx='50' cy='50' r='20'/%3E%3Ccircle cx='50' cy='50' r='10'/%3E%3Cpath d='M50 20 L65 45 L50 50 L35 45 Z'/%3E%3Cpath d='M50 80 L65 55 L50 50 L35 55 Z'/%3E%3Cpath d='M20 50 L45 35 L50 50 L45 65 Z'/%3E%3Cpath d='M80 50 L55 35 L50 50 L55 65 Z'/%3E%3C/g%3E%3C/svg%3E");
+            background-size: 150px 150px;
+            background-position: center;
+        }
+
+        /* Floating Om/Sanskrit Animation - MORE VISIBLE */
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100%) translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(20px) rotate(10deg);
+                opacity: 0;
+            }
+        }
+
+        /* Lotus Petal Falling - MORE VISIBLE */
+        @keyframes petalFall {
+            0% {
+                transform: translateY(-20px) translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(100vh) translateX(30px) rotate(180deg);
+                opacity: 0;
+            }
+        }
+
+        /* Divine Light Rays */
+        @keyframes lightRays {
+            0%, 100% {
+                opacity: 0.1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.3;
+                transform: scale(1.1);
+            }
+        }
+
+        /* Glowing Text Effect - ENHANCED */
+        @keyframes textGlow {
+            0%, 100% {
+                text-shadow: 0 0 15px rgba(212, 154, 54, 0.4), 0 2px 4px rgba(44, 76, 59, 0.2);
+            }
+            50% {
+                text-shadow: 0 0 25px rgba(212, 154, 54, 0.7), 0 0 35px rgba(122, 144, 124, 0.4), 0 2px 8px rgba(44, 76, 59, 0.3);
+            }
+        }
+
+        /* Border Pulse - MORE PRONOUNCED */
+        @keyframes borderPulse {
+            0%, 100% {
+                border-color: rgba(212, 154, 54, 0.5);
+                box-shadow: 0 0 15px rgba(212, 154, 54, 0.3);
+            }
+            50% {
+                border-color: rgba(212, 154, 54, 0.9);
+                box-shadow: 0 0 30px rgba(212, 154, 54, 0.5), 0 0 40px rgba(212, 154, 54, 0.3);
+            }
+        }
+
+        .om-float {
+            position: absolute;
+            font-size: 2.5rem;
+            color: rgba(212, 154, 54, 0.4);
+            font-family: 'Noto Sans Devanagari', serif;
+            pointer-events: none;
+            animation: floatUp 25s linear infinite;
+            text-shadow: 0 0 10px rgba(212, 154, 54, 0.3);
+        }
+
+        .om-float:nth-child(2) { animation-delay: 5s; left: 20%; }
+        .om-float:nth-child(3) { animation-delay: 10s; left: 60%; }
+        .om-float:nth-child(4) { animation-delay: 15s; left: 80%; }
+        .om-float:nth-child(5) { animation-delay: 20s; left: 40%; }
+
+        .petal-fall {
+            position: absolute;
+            font-size: 2rem;
+            color: rgba(212, 154, 54, 0.5);
+            pointer-events: none;
+            animation: petalFall 20s linear infinite;
+            filter: drop-shadow(0 0 8px rgba(212, 154, 54, 0.4));
+        }
+
+        .petal-fall:nth-child(2) { animation-delay: 4s; left: 30%; }
+        .petal-fall:nth-child(3) { animation-delay: 8s; left: 70%; }
+        .petal-fall:nth-child(4) { animation-delay: 12s; left: 50%; }
+        .petal-fall:nth-child(5) { animation-delay: 16s; left: 85%; }
+
+        .divine-light {
+            animation: lightRays 8s ease-in-out infinite;
+        }
+
+        .glow-text {
+            animation: textGlow 4s ease-in-out infinite;
+        }
+
+        .pulse-border {
+            animation: borderPulse 3s ease-in-out infinite;
+        }
+
+        .shloka-box-animated {
+            transition: all 0.3s ease;
+        }
+
+        .shloka-box-animated:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(44, 76, 59, 0.15);
+        }
+    </style>
+</head>
+<body class="leaf-pattern">
+
+    <!-- Header / Navigation -->
+    <header id="header" class="nav-sticky fixed w-full top-0 z-50 bg-cream">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="Copy-of-IMG-20250817-WA0062.svg" alt="Sattvalya Logo" class="h-12 md:h-14 w-auto">
+                    <div>
+                        <h1 class="text-xl md:text-2xl font-bold text-forest leading-tight">Sattvalya Saar</h1>
+                        <p class="text-xs md:text-sm text-sage hindi-text">सत्वल्य सार</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#treatments" class="text-bark hover:text-forest transition-colors duration-300">Treatments</a>
+                    <a href="#about" class="text-bark hover:text-forest transition-colors duration-300">About</a>
+                    <a href="#process" class="text-bark hover:text-forest transition-colors duration-300">Process</a>
+                    <a href="#stories" class="text-bark hover:text-forest transition-colors duration-300">Stories</a>
+                    <a href="#faq" class="text-bark hover:text-forest transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="bg-gradient-to-r from-forest to-sage text-white px-6 py-2.5 rounded-full hover:shadow-lg transition-all duration-300">
+                        Book Consultation
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-forest text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-6 pb-4 space-y-4">
+                <a href="#treatments" class="block text-bark hover:text-forest transition-colors duration-300">Treatments</a>
+                <a href="#about" class="block text-bark hover:text-forest transition-colors duration-300">About</a>
+                <a href="#process" class="block text-bark hover:text-forest transition-colors duration-300">Process</a>
+                <a href="#stories" class="block text-bark hover:text-forest transition-colors duration-300">Stories</a>
+                <a href="#faq" class="block text-bark hover:text-forest transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block bg-gradient-to-r from-forest to-sage text-white px-6 py-2.5 rounded-full text-center hover:shadow-lg transition-all duration-300">
+                    Book Consultation
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 relative overflow-hidden mandala-pattern">
+        <!-- Base gradient background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-cream via-white to-sage/5"></div>
+
+        <!-- Sacred geometry pattern overlay -->
+        <div class="absolute inset-0 sacred-pattern opacity-40"></div>
+
+        <!-- Rotating mandala effect in background -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl max-h-4xl opacity-5 rotate-slow pointer-events-none">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="mandala" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+                        <circle cx="100" cy="100" r="80" fill="none" stroke="#2C4C3B" stroke-width="1"/>
+                        <circle cx="100" cy="100" r="60" fill="none" stroke="#7A907C" stroke-width="0.8"/>
+                        <circle cx="100" cy="100" r="40" fill="none" stroke="#D49A36" stroke-width="0.6"/>
+                        <circle cx="100" cy="100" r="20" fill="none" stroke="#2C4C3B" stroke-width="0.4"/>
+
+                        <!-- Petals -->
+                        <g transform="translate(100, 100)">
+                            <path d="M0,-60 Q20,-80 0,-100 Q-20,-80 0,-60" fill="none" stroke="#7A907C" stroke-width="0.5"/>
+                            <path d="M0,-60 Q20,-80 0,-100 Q-20,-80 0,-60" fill="none" stroke="#7A907C" stroke-width="0.5" transform="rotate(45)"/>
+                            <path d="M0,-60 Q20,-80 0,-100 Q-20,-80 0,-60" fill="none" stroke="#7A907C" stroke-width="0.5" transform="rotate(90)"/>
+                            <path d="M0,-60 Q20,-80 0,-100 Q-20,-80 0,-60" fill="none" stroke="#7A907C" stroke-width="0.5" transform="rotate(135)"/>
+                            <path d="M0,-60 Q20,-80 0,-100 Q-20,-80 0,-60" fill="none" stroke="#7A907C" stroke-width="0.5" transform="rotate(180)"/>
+                            <path d="M0,-60 Q20,-80 0,-100 Q-20,-80 0,-60" fill="none" stroke="#7A907C" stroke-width="0.5" transform="rotate(225)"/>
+                            <path d="M0,-60 Q20,-80 0,-100 Q-20,-80 0,-60" fill="none" stroke="#7A907C" stroke-width="0.5" transform="rotate(270)"/>
+                            <path d="M0,-60 Q20,-80 0,-100 Q-20,-80 0,-60" fill="none" stroke="#7A907C" stroke-width="0.5" transform="rotate(315)"/>
+                        </g>
+                    </pattern>
+                </defs>
+                <rect width="200" height="200" fill="url(#mandala)"/>
+            </svg>
+        </div>
+
+        <!-- Animated gradient orbs -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-sage/10 to-transparent rounded-full blur-3xl breathe-animation"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-gold/5 to-transparent rounded-full blur-3xl breathe-animation" style="animation-delay: 2s;"></div>
+        <div class="container mx-auto max-w-7xl relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="fade-in relative">
+                    <div class="inline-block bg-sage/10 text-forest px-4 py-2 rounded-full mb-6">
+                        <i class="fas fa-star text-gold"></i>
+                        <span class="ml-2 text-sm font-medium">3+ Years of Dedicated Healing Practice</span>
+                    </div>
+
+                    <h1 class="text-5xl md:text-6xl font-bold text-forest mb-4 leading-tight">
+                        Guided by Nature,<br/>
+                        <span class="text-gradient">Grounded in Ancient Science</span>
+                    </h1>
+
+                    <!-- Subtle Tagline -->
+                    <p class="text-lg text-forest/80 mb-2 italic font-medium">
+                        Sattvalya Saar | <span class="hindi-text">सत्वल्य सार</span>
+                    </p>
+                    <p class="text-base text-sage mb-8 hindi-text italic">
+                        शुद्धता, संतुलन, और आंतरिक शांति का मार्ग
+                    </p>
+
+                    <p class="text-xl text-bark/80 mb-8 leading-relaxed">
+                        Reverse lifestyle diseases and liver disorders through authentic Ayurvedic healing.
+                        Personalized treatments that address the root cause, not just symptoms.
+                    </p>
+
+                    <!-- Trust Badges -->
+                    <div class="grid grid-cols-3 gap-4 mb-10">
+                        <div class="text-center">
+                            <div class="text-gold text-2xl mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-sm text-bark/70 font-medium">500+ Verified Patients</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-gold text-3xl mb-2">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <p class="text-sm text-bark/70 font-medium">Online & In-Clinic</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-gold text-3xl mb-2">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <p class="text-sm text-bark/70 font-medium">Root-Cause Healing</p>
+                        </div>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-gradient-to-r from-forest to-sage text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl transition-all duration-300 text-center">
+                            <i class="fas fa-calendar-check mr-2"></i>
+                            Book 1:1 Consultation
+                        </a>
+                        <a href="#treatments" class="border-2 border-forest text-forest px-8 py-4 rounded-full font-semibold text-lg hover:bg-forest hover:text-white transition-all duration-300 text-center">
+                            Explore Treatments
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right - Logo & Shloka -->
+                <div class="relative fade-in">
+                    <!-- Transparent gradient background container -->
+                    <div class="relative bg-gradient-to-br from-white/60 via-cream/40 to-sage/10 backdrop-blur-sm rounded-3xl p-8 border border-sage/10">
+                        <!-- Decorative corner elements -->
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-gold/5 to-transparent rounded-full blur-3xl"></div>
+                        <div class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-sage/5 to-transparent rounded-full blur-3xl"></div>
+
+                        <div class="relative text-center">
+                            <!-- Large Logo - Seamlessly integrated with animation -->
+                            <div class="mb-8 relative">
+                                <!-- Breathing glow effect behind logo -->
+                                <div class="absolute inset-0 flex items-center justify-center breathe-animation">
+                                    <div class="w-64 h-64 bg-gradient-to-br from-sage/20 via-gold/10 to-forest/20 rounded-full blur-3xl"></div>
+                                </div>
+
+                                <!-- Logo with gentle floating animation -->
+                                <img src="Copy-of-IMG-20250817-WA0062.svg"
+                                     alt="Sattvalya Saar Logo"
+                                     class="w-full max-w-sm mx-auto relative z-10 drop-shadow-lg float-animation"
+                                     style="filter: drop-shadow(0 10px 25px rgba(44, 76, 59, 0.15));">
+                            </div>
+
+                            <!-- Food as Medicine Shloka -->
+                            <div class="bg-white/80 backdrop-blur-md rounded-3xl p-8 shadow-lg border border-sage/20 relative">
+                                <!-- Decorative leaf icons -->
+                                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gold text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-leaf text-xl"></i>
+                                </div>
+
+                                <div class="mt-4">
+                                    <p class="text-3xl font-serif text-forest mb-3 hindi-text leading-relaxed">
+                                        आहारं परम् औषधम्
+                                    </p>
+                                    <p class="text-xl text-sage/90 mb-6 italic font-serif">
+                                        "Food is the ultimate medicine"
+                                    </p>
+
+                                    <div class="w-24 h-1 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mb-6"></div>
+
+                                    <p class="text-bark/80 leading-relaxed mb-6 text-base">
+                                        In Ayurveda, a proper, balanced diet tailored to your individual constitution (Prakriti)
+                                        prevents illness and cures existing imbalances. It emphasizes eating fresh, wholesome,
+                                        and seasonal foods mindfully.
+                                    </p>
+
+                                    <!-- Secondary Shloka -->
+                                    <div class="bg-gradient-to-br from-cream to-sage/5 rounded-2xl p-6 border-l-4 border-gold relative overflow-hidden">
+                                        <!-- Subtle pattern -->
+                                        <div class="absolute top-0 right-0 opacity-5">
+                                            <i class="fas fa-spa text-6xl text-forest"></i>
+                                        </div>
+
+                                        <p class="text-xl font-serif text-forest mb-2 hindi-text relative z-10">
+                                            लंघनं परम् औषधम्
+                                        </p>
+                                        <p class="text-sm text-bark/80 italic relative z-10 leading-relaxed">
+                                            "Fasting is the greatest medicine" - Periodic fasting allows the digestive system
+                                            to rest and the body to heal itself naturally.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sanskrit Shloka Section - DARKER BACKGROUND FOR BETTER CONTRAST -->
+    <section class="py-20 px-6 bg-gradient-to-br from-forest via-[#355842] to-forest text-white relative overflow-hidden">
+        <!-- Floating Om Symbols -->
+        <div class="om-float" style="left: 10%;">ॐ</div>
+        <div class="om-float" style="left: 25%;">ॐ</div>
+        <div class="om-float" style="left: 50%;">ॐ</div>
+        <div class="om-float" style="left: 75%;">ॐ</div>
+        <div class="om-float" style="left: 90%;">ॐ</div>
+
+        <!-- Falling Lotus Petals -->
+        <div class="petal-fall" style="left: 15%;">🌸</div>
+        <div class="petal-fall" style="left: 35%;">🌸</div>
+        <div class="petal-fall" style="left: 55%;">🌸</div>
+        <div class="petal-fall" style="left: 70%;">🌸</div>
+        <div class="petal-fall" style="left: 88%;">🌸</div>
+
+        <!-- Divine Light Rays in Background - MORE VISIBLE -->
+        <div class="absolute inset-0 divine-light opacity-30">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-3xl">
+                <svg viewBox="0 0 200 200" class="w-full h-full">
+                    <defs>
+                        <radialGradient id="divineLight">
+                            <stop offset="0%" style="stop-color:#D49A36;stop-opacity:0.3" />
+                            <stop offset="100%" style="stop-color:#2C4C3B;stop-opacity:0" />
+                        </radialGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="80" fill="url(#divineLight)" />
+                </svg>
+            </div>
+        </div>
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <div class="inline-block bg-gold/30 px-6 py-3 rounded-full mb-4 pulse-border shadow-xl">
+                    <i class="fas fa-om text-gold mr-3 text-xl"></i>
+                    <span class="text-base font-bold text-white tracking-wide">प्राचीन ज्ञान | Ancient Wisdom</span>
+                </div>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                <!-- Left - Ayurveda's Purpose -->
+                <div class="shloka-box shloka-box-animated backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-2xl border-2 border-gold/40 relative overflow-hidden bg-white/95">
+                    <h3 class="text-2xl md:text-3xl font-bold text-forest mb-6 hindi-text">
+                        आयुर्वेद का उद्देश्य
+                    </h3>
+
+                    <div class="text-center mb-6 relative z-10">
+                        <p class="text-xl md:text-2xl font-serif text-forest mb-4 hindi-text leading-relaxed glow-text">
+                            स्वस्थस्य स्वास्थ्य रक्षणं<br/>
+                            आतुरस्य विकार प्रशमनं च!
+                        </p>
+                        <div class="w-16 h-1 bg-gold mx-auto my-4"></div>
+                        <p class="text-sm text-bark/70 leading-relaxed italic">
+                            "To preserve the health of the healthy, and to cure the diseases of the diseased."
+                        </p>
+                    </div>
+
+                    <p class="text-bark/80 leading-relaxed hindi-text text-base">
+                        आयुर्वेद का मुख्य उद्देश्य स्वस्थ व्यक्ति के स्वास्थ्य को बनाए रखना और बीमार व्यक्ति के रोगों का उपचार करना है।
+                        इस प्रकार, आयुर्वेद का ध्यान केवल शारीरिक रोगों से मुक्ति दिलाने पर ही नहीं, बल्कि व्यक्ति के स्वास्थ्य को बनाए रखने पर भी केंद्रित है।
+                    </p>
+                </div>
+
+                <!-- Right - Definition of Health -->
+                <div class="shloka-box shloka-box-animated backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-2xl border-2 border-gold/40 relative overflow-hidden bg-white/95">
+                    <h3 class="text-2xl md:text-3xl font-bold text-forest mb-6 hindi-text">
+                        आयुर्वेद में स्वास्थ्य की परिभाषा
+                    </h3>
+
+                    <div class="text-center mb-6 relative z-10">
+                        <p class="text-lg md:text-xl font-serif text-forest mb-4 hindi-text leading-relaxed glow-text">
+                            समदोषः समाग्निश्च समधातु मलक्रियाः।<br/>
+                            प्रसन्नात्मेन्द्रियमनाः स्वस्थ इत्यभिधीयते॥
+                        </p>
+                        <div class="w-16 h-1 bg-gold mx-auto my-4"></div>
+                        <p class="text-xs text-bark/50 italic">— सुश्रुत संहिता</p>
+                    </div>
+
+                    <p class="text-bark/80 leading-relaxed hindi-text text-base">
+                        जब तीनों दोष (वात, पित्त और कफ), पाचन अग्नि (अग्नि), शरीर के सभी ऊतक (धातु) और सभी उत्सर्जन क्रियाएं
+                        (मूत्रत्याग और मलत्याग की शारीरिक क्रियाएं) पूर्ण रूप से व्यवस्थित और संतुलित हों, और इंद्रियां, मन और आत्मा प्रसन्न हों,
+                        तो व्यक्ति पूर्णतः स्वस्थ होता है।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Signs of Health Section -->
+            <div class="shloka-box shloka-box-animated backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-2xl border-2 border-gold/40 relative overflow-hidden bg-white/95">
+                <h3 class="text-2xl md:text-3xl font-bold text-forest mb-6 hindi-text text-center glow-text relative z-10">
+                    आपको कैसे पता चलेगा कि आप स्वस्थ हैं?
+                </h3>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-start space-x-3">
+                        <div class="flex-shrink-0 w-8 h-8 bg-gold rounded-full flex items-center justify-center mt-1">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
+                        <p class="text-bark/80 hindi-text leading-relaxed">उचित समय पर भूख लगना और भोजन का सही पाचन होना</p>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div class="flex-shrink-0 w-8 h-8 bg-gold rounded-full flex items-center justify-center mt-1">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
+                        <p class="text-bark/80 hindi-text leading-relaxed">शरीर से अपशिष्ट पदार्थों का नियमित निष्कासन (नियमित मल त्याग, मूत्र और पसीना)</p>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div class="flex-shrink-0 w-8 h-8 bg-gold rounded-full flex items-center justify-center mt-1">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
+                        <p class="text-bark/80 hindi-text leading-relaxed">रात को सोने के बाद आसानी से नींद आ जाना</p>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div class="flex-shrink-0 w-8 h-8 bg-gold rounded-full flex items-center justify-center mt-1">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
+                        <p class="text-bark/80 hindi-text leading-relaxed">सुबह उठने पर ताजगी महसूस होना</p>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div class="flex-shrink-0 w-8 h-8 bg-gold rounded-full flex items-center justify-center mt-1">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
+                        <p class="text-bark/80 hindi-text leading-relaxed">प्राकृतिक शक्ति और रोग प्रतिरोधक क्षमता का बरकरार रहना</p>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div class="flex-shrink-0 w-8 h-8 bg-gold rounded-full flex items-center justify-center mt-1">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
+                        <p class="text-bark/80 hindi-text leading-relaxed">मन में शांति और संतोष का होना</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <div class="inline-flex items-center bg-white/95 backdrop-blur-md rounded-2xl px-8 py-4 border-2 border-gold shadow-xl">
+                        <div class="text-gold text-4xl mr-4">
+                            <i class="fas fa-lotus"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-forest text-lg">Sattvalya Saar | <span class="hindi-text">सत्वल्य सार</span></p>
+                            <p class="text-base text-sage hindi-text font-medium">शुद्धता, संतुलन, और आंतरिक शांति का मार्ग</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatments Section -->
+    <section id="treatments" class="py-20 px-6 bg-white">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-sage/10 text-forest px-4 py-2 rounded-full mb-4">
+                    <i class="fas fa-spa mr-2"></i>
+                    Specialized Treatments
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-forest mb-4">
+                    Conditions We Treat with Deep Ayurvedic Care
+                </h2>
+                <p class="text-xl text-bark/70 max-w-3xl mx-auto">
+                    Every treatment plan is personalized to your unique constitution (Prakriti) and imbalance (Vikriti)
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Treatment Card 1 - Lifestyle Disorders -->
+                <div class="bg-gradient-to-br from-cream to-white rounded-3xl p-8 shadow-lg hover-lift border border-sage/20">
+                    <div class="w-16 h-16 bg-gradient-to-br from-forest to-sage rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-heartbeat text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-forest mb-4">Lifestyle Disorders</h3>
+                    <p class="text-bark/70 mb-6 leading-relaxed">
+                        Comprehensive management and reversal of modern metabolic conditions through time-tested Ayurvedic protocols.
+                    </p>
+                    <ul class="space-y-2 mb-6 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Type 2 Diabetes (Prameha)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Hypertension (High BP)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Obesity (Sthaulya)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">High Cholesterol</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">PCOD/PCOS</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Thyroid Disorders</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Chronic Fatigue</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center text-forest font-semibold hover:text-sage transition-colors text-sm">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Treatment Card 2 - Liver Disorders -->
+                <div class="bg-gradient-to-br from-cream to-white rounded-3xl p-8 shadow-lg hover-lift border border-sage/20">
+                    <div class="w-16 h-16 bg-gradient-to-br from-forest to-sage rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-lungs text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-forest mb-4">Liver Disorders</h3>
+                    <p class="text-bark/70 mb-6 leading-relaxed">
+                        Deep cellular healing for hepatic conditions using powerful Ayurvedic hepatoprotective herbs and detoxification.
+                    </p>
+                    <ul class="space-y-2 mb-6 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Fatty Liver (Yakrit Roga)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Liver Cirrhosis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Jaundice (Kamala)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Hepatitis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Elevated Liver Enzymes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Alcoholic Liver Disease</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Liver Detoxification</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center text-forest font-semibold hover:text-sage transition-colors text-sm">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Treatment Card 3 - Marma Chikitsa -->
+                <div class="bg-gradient-to-br from-cream to-white rounded-3xl p-8 shadow-lg hover-lift border border-sage/20">
+                    <div class="w-16 h-16 bg-gradient-to-br from-forest to-sage rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-hand-sparkles text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-forest mb-4">Marma Chikitsa</h3>
+                    <p class="text-bark/70 mb-6 leading-relaxed">
+                        Ancient vital point therapy stimulating 107 energy points to unblock Prana flow and activate natural healing.
+                    </p>
+                    <ul class="space-y-2 mb-6 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Joint Pain & Arthritis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Cervical Spondylitis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Frozen Shoulder</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Muscle Stiffness</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Migraine & Headaches</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Anxiety & Stress</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Disc Bulge (Non-surgical)</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center text-forest font-semibold hover:text-sage transition-colors text-sm">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Treatment Card 4 - Panchakarma -->
+                <div class="bg-gradient-to-br from-cream to-white rounded-3xl p-8 shadow-lg hover-lift border border-sage/20">
+                    <div class="w-16 h-16 bg-gradient-to-br from-forest to-sage rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-spa text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-forest mb-4">Panchakarma</h3>
+                    <p class="text-bark/70 mb-6 leading-relaxed">
+                        Traditional Ayurvedic detoxification balancing Vata, Pitta, Kapha through five cleansing actions and rejuvenation.
+                    </p>
+                    <ul class="space-y-2 mb-6 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Vamana (Therapeutic Vomiting)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Virechana (Purgation Therapy)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Basti (Medicated Enema)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Nasya (Nasal Therapy)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Raktamokshana (Bloodletting)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Abhyanga & Swedana</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold text-xs mt-1.5 mr-2"></i>
+                            <span class="text-bark/80">Deep Detoxification</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center text-forest font-semibold hover:text-sage transition-colors text-sm">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialty Deep Dive Section -->
+    <section class="py-20 px-6 bg-gradient-to-br from-cream via-white to-cream">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-sage/10 text-forest px-4 py-2 rounded-full mb-4">
+                    <i class="fas fa-certificate mr-2"></i>
+                    Our Specializations
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-forest mb-4">
+                    Ancient Healing Arts, Mastered for You
+                </h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Marma Chikitsa Deep Dive -->
+                <div class="bg-white rounded-3xl p-10 shadow-xl border-2 border-sage/20">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-forest to-sage rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-hand-sparkles text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-forest">Marma Chikitsa</h3>
+                            <p class="text-sage italic">Vital Point Therapy</p>
+                        </div>
+                    </div>
+
+                    <p class="text-bark/80 leading-relaxed mb-6">
+                        Marma Chikitsa is an ancient Ayurvedic healing art focused on stimulating <strong>107 vital energy points</strong>
+                        across the body. By applying precise pressure, massage, or medicated herbal oils, it unblocks the flow of
+                        <em>Prana</em> (life energy), relieving pain, improving circulation, and activating the body's natural healing mechanisms.
+                    </p>
+
+                    <div class="bg-cream rounded-2xl p-6 mb-6">
+                        <h4 class="font-bold text-forest mb-3 flex items-center">
+                            <i class="fas fa-lightbulb text-gold mr-2"></i>
+                            How It Works
+                        </h4>
+                        <p class="text-bark/70 text-sm leading-relaxed">
+                            Marma points are intersections where muscles, ligaments, joints, veins, and bones meet. In Ayurveda,
+                            these are considered physical doorways to the mind and body. When these points become blocked or disturbed
+                            due to injury, stress, or poor posture, it disrupts the flow of energy and causes pain, stiffness, or disease.
+                            The therapy gently releases these blockages, restoring overall balance.
+                        </p>
+                    </div>
+
+                    <h4 class="font-bold text-forest mb-4">Key Benefits:</h4>
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-gold mt-1 mr-2"></i>
+                            <span class="text-sm text-bark/80">Pain management (joints, cervical, shoulder)</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-gold mt-1 mr-2"></i>
+                            <span class="text-sm text-bark/80">Nervous system support</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-gold mt-1 mr-2"></i>
+                            <span class="text-sm text-bark/80">Migraine & headache relief</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-gold mt-1 mr-2"></i>
+                            <span class="text-sm text-bark/80">Anxiety & stress reduction</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-gold mt-1 mr-2"></i>
+                            <span class="text-sm text-bark/80">Detoxification boost</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-gold mt-1 mr-2"></i>
+                            <span class="text-sm text-bark/80">Deep relaxation</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-sage/10 rounded-xl p-4 border-l-4 border-gold">
+                        <p class="text-sm text-bark/70 italic">
+                            <strong>During a Session:</strong> A trained therapist gently presses or manipulates the affected Marma points,
+                            often incorporating medicated Ayurvedic oils to soothe the skin and enhance energy flow.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Panchakarma Deep Dive -->
+                <div class="bg-white rounded-3xl p-10 shadow-xl border-2 border-sage/20">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-forest to-sage rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-spa text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-forest">Panchakarma</h3>
+                            <p class="text-sage italic">Five-Action Detoxification</p>
+                        </div>
+                    </div>
+
+                    <p class="text-bark/80 leading-relaxed mb-6">
+                        Panchakarma is a traditional Ayurvedic detoxification and purification therapy designed to balance the body's
+                        three doshas (Vata, Pitta, Kapha). It systematically removes deep-seated toxins (<em>Ama</em>) from tissues
+                        using a personalized sequence of oil massages, steam baths, and five primary cleansing actions.
+                    </p>
+
+                    <div class="bg-cream rounded-2xl p-6 mb-6">
+                        <h4 class="font-bold text-forest mb-3 flex items-center">
+                            <i class="fas fa-leaf text-gold mr-2"></i>
+                            The 5 Core Therapies
+                        </h4>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-start">
+                                <strong class="text-forest mr-2 min-w-[120px]">Vamana:</strong>
+                                <span class="text-bark/70">Therapeutic vomiting to clear mucus and toxins</span>
+                            </li>
+                            <li class="flex items-start">
+                                <strong class="text-forest mr-2 min-w-[120px]">Virechana:</strong>
+                                <span class="text-bark/70">Purgation therapy to cleanse liver and intestines</span>
+                            </li>
+                            <li class="flex items-start">
+                                <strong class="text-forest mr-2 min-w-[120px]">Basti:</strong>
+                                <span class="text-bark/70">Medicated enemas for colon and nerve health</span>
+                            </li>
+                            <li class="flex items-start">
+                                <strong class="text-forest mr-2 min-w-[120px]">Nasya:</strong>
+                                <span class="text-bark/70">Nasal therapy for sinuses and mental clarity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <strong class="text-forest mr-2 min-w-[120px]">Raktamokshana:</strong>
+                                <span class="text-bark/70">Controlled bloodletting for blood purification</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h4 class="font-bold text-forest mb-4">The 3-Step Process:</h4>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-start">
+                            <div class="bg-gold text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0 mt-1">
+                                1
+                            </div>
+                            <div>
+                                <p class="font-semibold text-forest">Purva Karma (Preparation)</p>
+                                <p class="text-sm text-bark/70">Internal oleation, Abhyanga massage, steam baths to loosen toxins</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-gold text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0 mt-1">
+                                2
+                            </div>
+                            <div>
+                                <p class="font-semibold text-forest">Pradhana Karma (Cleansing)</p>
+                                <p class="text-sm text-bark/70">Active execution of the five core actions to expel toxins</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-gold text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0 mt-1">
+                                3
+                            </div>
+                            <div>
+                                <p class="font-semibold text-forest">Paschat Karma (Rejuvenation)</p>
+                                <p class="text-sm text-bark/70">Post-cleansing diet and herbal tonics to rebuild Agni</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-sage/10 rounded-xl p-4 border-l-4 border-gold">
+                        <p class="text-sm text-bark/70">
+                            <strong>Duration:</strong> Typically 7-21 days under strict supervision<br/>
+                            <strong>Customized:</strong> Each program is tailored to your unique Prakriti and Vikriti
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-gradient-to-br from-cream via-white to-cream">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <!-- Image Column -->
+                <div class="md:col-span-2">
+                    <div class="relative">
+                        <div class="rounded-3xl overflow-hidden shadow-2xl bg-white">
+                            <img src="vaidya-photo.jpg" alt="Vaidya Neha" class="w-full h-auto object-cover">
+                        </div>
+
+                        <!-- Decorative Elements -->
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-gold/20 rounded-full blur-2xl"></div>
+                        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-sage/20 rounded-full blur-2xl"></div>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="md:col-span-3">
+                    <div class="inline-block bg-sage/10 text-forest px-4 py-2 rounded-full mb-4">
+                        <i class="fas fa-heart mr-2"></i>
+                        Meet Your Healing Guide
+                    </div>
+
+                    <h2 class="text-4xl md:text-5xl font-bold text-forest mb-6">
+                        A Journey Rooted in Tradition,<br/>
+                        <span class="text-sage">Driven by Compassion</span>
+                    </h2>
+
+                    <div class="space-y-4 text-bark/80 leading-relaxed text-lg">
+                        <p>
+                            Namaste. I am <strong class="text-forest">Vaidya Neha</strong>, and for over 3 years,
+                            I have had the privilege of guiding individuals back to health using the timeless wisdom of Ayurveda.
+                        </p>
+
+                        <p>
+                            My journey began in a traditional Ayurvedic family where healing was not just a profession—it was a
+                            sacred calling passed down through generations. After completing my <strong>B.A.M.S.</strong>,
+                            I specialized in <strong>Marma Chikitsa</strong> (vital point therapy) and authentic <strong>Panchakarma</strong> therapies,
+                            mastering the art of <em>Nadi Pariksha</em> (pulse diagnosis) under renowned Vaidyas.
+                        </p>
+
+                        <p>
+                            What sets my practice apart is a simple truth: <strong class="text-forest">I treat the person,
+                            not just the disease.</strong> Every patient receives a customized healing plan based on their unique
+                            constitution (Prakriti), current imbalances (Vikriti), and lifestyle. I don't believe in
+                            masking symptoms—I work to identify and eliminate the root cause.
+                        </p>
+
+                        <p>
+                            Whether you're struggling with stubborn diabetes, fatty liver, or chronic fatigue, know this:
+                            <em>your body has an innate intelligence to heal itself</em>. My role is to guide you back to
+                            balance using nature's pharmacy—herbs, diet, detox, and rejuvenation.
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 border-l-4 border-gold mt-6">
+                            <p class="text-forest font-serif italic text-xl">
+                                "Healing is not a destination—it's a return to your natural state of harmony."
+                            </p>
+                            <p class="text-bark/60 mt-2">— Vaidya Neha</p>
+                        </div>
+                    </div>
+
+                    <!-- Credentials -->
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-graduation-cap text-gold text-2xl"></i>
+                            <div>
+                                <p class="font-semibold text-forest">B.A.M.S.</p>
+                                <p class="text-sm text-bark/60">Certified Ayurvedic Vaidya</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-hand-sparkles text-gold text-2xl"></i>
+                            <div>
+                                <p class="font-semibold text-forest">Marma Chikitsa Specialist</p>
+                                <p class="text-sm text-bark/60">107 Vital Point Therapy</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-spa text-gold text-2xl"></i>
+                            <div>
+                                <p class="font-semibold text-forest">Panchakarma Expert</p>
+                                <p class="text-sm text-bark/60">Traditional Detoxification</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-award text-gold text-2xl"></i>
+                            <div>
+                                <p class="font-semibold text-forest">3+ Years Practice</p>
+                                <p class="text-sm text-bark/60">100+ Patients Healed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-sage/10 text-forest px-4 py-2 rounded-full mb-4">
+                    <i class="fas fa-route mr-2"></i>
+                    Your Healing Journey
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-forest mb-4">
+                    How We Work Together
+                </h2>
+                <p class="text-xl text-bark/70 max-w-2xl mx-auto">
+                    A systematic, personalized approach to restore your health from the root
+                </p>
+            </div>
+
+            <!-- Process Timeline -->
+            <div class="relative">
+                <!-- Vertical Line (hidden on mobile) -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-forest via-sage to-gold"></div>
+
+                <!-- Step 1 -->
+                <div class="relative mb-16">
+                    <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                        <div class="md:text-right mb-8 md:mb-0">
+                            <div class="bg-gradient-to-br from-cream to-white rounded-2xl p-8 shadow-lg border border-sage/20 hover-lift">
+                                <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-forest to-sage text-white font-bold text-xl mb-4 md:float-right md:ml-4">
+                                    1
+                                </div>
+                                <h3 class="text-2xl font-bold text-forest mb-3">Consultation & Diagnosis</h3>
+                                <p class="text-bark/70 leading-relaxed mb-4">
+                                    In-depth discussion of your health history, lifestyle, and concerns. Traditional
+                                    <strong>Nadi Pariksha</strong> (pulse diagnosis) to assess your Prakriti (constitution)
+                                    and current imbalances. Understanding your Agni (digestive fire) and Dosha status.
+                                </p>
+                                <div class="flex flex-wrap gap-2 md:justify-end">
+                                    <span class="bg-gold/20 text-forest text-sm px-3 py-1 rounded-full">60-90 minutes</span>
+                                    <span class="bg-gold/20 text-forest text-sm px-3 py-1 rounded-full">Online/In-person</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex justify-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-forest to-sage rounded-full flex items-center justify-center shadow-xl border-4 border-white">
+                                <i class="fas fa-stethoscope text-white text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="md:hidden flex justify-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-forest to-sage rounded-full flex items-center justify-center shadow-xl">
+                                <i class="fas fa-stethoscope text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative mb-16">
+                    <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                        <div class="hidden md:flex justify-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-forest to-sage rounded-full flex items-center justify-center shadow-xl border-4 border-white">
+                                <i class="fas fa-prescription text-white text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="md:hidden flex justify-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-forest to-sage rounded-full flex items-center justify-center shadow-xl">
+                                <i class="fas fa-prescription text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="mb-8 md:mb-0">
+                            <div class="bg-gradient-to-br from-cream to-white rounded-2xl p-8 shadow-lg border border-sage/20 hover-lift">
+                                <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-forest to-sage text-white font-bold text-xl mb-4 mr-4">
+                                    2
+                                </div>
+                                <h3 class="text-2xl font-bold text-forest mb-3">Custom Healing Plan</h3>
+                                <p class="text-bark/70 leading-relaxed mb-4">
+                                    Receive a personalized treatment protocol including herbal formulations,
+                                    <strong>Ahara</strong> (dietary guidelines), <strong>Vihara</strong> (lifestyle modifications),
+                                    and daily routines (Dinacharya). Everything tailored to your unique needs and practical for your life.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-gold/20 text-forest text-sm px-3 py-1 rounded-full">Herbal Medicine</span>
+                                    <span class="bg-gold/20 text-forest text-sm px-3 py-1 rounded-full">Diet Plan</span>
+                                    <span class="bg-gold/20 text-forest text-sm px-3 py-1 rounded-full">Lifestyle Guide</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative mb-16">
+                    <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                        <div class="md:text-right mb-8 md:mb-0">
+                            <div class="bg-gradient-to-br from-cream to-white rounded-2xl p-8 shadow-lg border border-sage/20 hover-lift">
+                                <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-forest to-sage text-white font-bold text-xl mb-4 md:float-right md:ml-4">
+                                    3
+                                </div>
+                                <h3 class="text-2xl font-bold text-forest mb-3">Treatment & Detoxification</h3>
+                                <p class="text-bark/70 leading-relaxed mb-4">
+                                    Implementation of your healing plan. For deeper conditions, we may recommend
+                                    <strong>Panchakarma</strong>—authentic detoxification therapies like Virechana, Basti,
+                                    or Abhyanga to eliminate deep-seated toxins (Ama) and restore balance.
+                                </p>
+                                <div class="flex flex-wrap gap-2 md:justify-end">
+                                    <span class="bg-gold/20 text-forest text-sm px-3 py-1 rounded-full">4-12 weeks</span>
+                                    <span class="bg-gold/20 text-forest text-sm px-3 py-1 rounded-full">Weekly check-ins</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex justify-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-forest to-sage rounded-full flex items-center justify-center shadow-xl border-4 border-white">
+                                <i class="fas fa-spa text-white text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="md:hidden flex justify-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-forest to-sage rounded-full flex items-center justify-center shadow-xl">
+                                <i class="fas fa-spa text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative">
+                    <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                        <div class="hidden md:flex justify-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-gold to-forest rounded-full flex items-center justify-center shadow-xl border-4 border-white pulse-gentle">
+                                <i class="fas fa-leaf text-white text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="md:hidden flex justify-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-gold to-forest rounded-full flex items-center justify-center shadow-xl pulse-gentle">
+                                <i class="fas fa-leaf text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-gradient-to-br from-cream to-white rounded-2xl p-8 shadow-lg border-2 border-gold/30 hover-lift">
+                                <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-gold to-forest text-white font-bold text-xl mb-4 mr-4">
+                                    4
+                                </div>
+                                <h3 class="text-2xl font-bold text-forest mb-3">Rejuvenation & Long-term Wellness</h3>
+                                <p class="text-bark/70 leading-relaxed mb-4">
+                                    Once balance is restored, we shift to <strong>Rasayana</strong> (rejuvenation therapy)
+                                    to strengthen immunity, enhance vitality, and prevent recurrence. You receive a sustainable
+                                    maintenance plan for lifelong health and resilience.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-gold/20 text-forest text-sm px-3 py-1 rounded-full">Immunity Building</span>
+                                    <span class="bg-gold/20 text-forest text-sm px-3 py-1 rounded-full">Vitality Restoration</span>
+                                    <span class="bg-gold/20 text-forest text-sm px-3 py-1 rounded-full">Lifelong Support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Stories / Testimonials -->
+    <section id="stories" class="py-20 px-6 bg-gradient-to-br from-cream via-white to-cream">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-sage/10 text-forest px-4 py-2 rounded-full mb-4">
+                    <i class="fas fa-quote-left mr-2"></i>
+                    Healing Stories
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-forest mb-4">
+                    Transformations That Inspire Us
+                </h2>
+                <p class="text-xl text-bark/70 max-w-2xl mx-auto">
+                    Real people, real results—hear from those who've reclaimed their health
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift border border-sage/10">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-gold text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p class="text-bark/80 leading-relaxed mb-6 italic">
+                        "I struggled with fatty liver for years. Doctors told me to just lose weight, but nothing worked.
+                        Vaidya Neha's personalized herbal protocol and dietary changes transformed my liver health in just
+                        4 months. My latest scan shows <strong>complete reversal</strong>. I'm forever grateful."
+                    </p>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-sage to-forest rounded-full flex items-center justify-center text-white font-bold">
+                            PM
+                        </div>
+                        <div>
+                            <p class="font-semibold text-forest">Priya Mehta</p>
+                            <p class="text-sm text-bark/60">Fatty Liver Reversal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift border border-sage/10">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-gold text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p class="text-bark/80 leading-relaxed mb-6 italic">
+                        "Living with Type 2 diabetes was exhausting—constant medication, energy crashes, and fear.
+                        Vaidya Neha's approach didn't just manage my blood sugar; it addressed the root metabolic issues.
+                        My HbA1c dropped from 9.2 to 6.1 in 6 months. <strong>I feel alive again.</strong>"
+                    </p>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-sage to-forest rounded-full flex items-center justify-center text-white font-bold">
+                            RK
+                        </div>
+                        <div>
+                            <p class="font-semibold text-forest">Rajesh Kumar</p>
+                            <p class="text-sm text-bark/60">Diabetes Management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift border border-sage/10">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-gold text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p class="text-bark/80 leading-relaxed mb-6 italic">
+                        "Chronic high blood pressure had me worried about my future. Medications helped, but I wanted a
+                        sustainable solution. Through Vaidya Neha's Panchakarma therapy and lifestyle adjustments,
+                        my BP stabilized naturally. <strong>No more dependency on pills.</strong> Incredible!"
+                    </p>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-sage to-forest rounded-full flex items-center justify-center text-white font-bold">
+                            ST
+                        </div>
+                        <div>
+                            <p class="font-semibold text-forest">Sunita Trivedi</p>
+                            <p class="text-sm text-bark/60">Hypertension Control</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Badge -->
+            <div class="mt-12 text-center">
+                <div class="inline-flex items-center bg-white rounded-full px-8 py-4 shadow-lg">
+                    <i class="fas fa-shield-alt text-gold text-2xl mr-3"></i>
+                    <div class="text-left">
+                        <p class="font-bold text-forest">500+ Verified Patient Reviews</p>
+                        <p class="text-sm text-bark/60">Average Rating: 4.9/5.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-6 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-sage/10 text-forest px-4 py-2 rounded-full mb-4">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    Common Questions
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-forest mb-4">
+                    Everything You Need to Know
+                </h2>
+                <p class="text-xl text-bark/70">
+                    Clear answers to help you begin your healing journey with confidence
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-gradient-to-br from-cream to-white rounded-2xl shadow-lg overflow-hidden border border-sage/10">
+                    <button class="faq-question w-full text-left px-8 py-6 flex items-center justify-between hover:bg-sage/5 transition-colors">
+                        <span class="text-lg font-semibold text-forest pr-8">
+                            Do I have to follow a very strict diet during treatment?
+                        </span>
+                        <i class="fas fa-chevron-down text-sage text-xl transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6">
+                        <p class="text-bark/80 leading-relaxed">
+                            Not at all! While Ayurveda emphasizes the importance of <strong>Ahara (diet)</strong>,
+                            I design practical, realistic eating plans that fit your lifestyle and preferences. The focus
+                            is on balance, not deprivation. You'll receive clear guidelines on what to favor and what to minimize,
+                            but everything is customized to be sustainable and enjoyable. Small, consistent changes yield the
+                            best long-term results.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-gradient-to-br from-cream to-white rounded-2xl shadow-lg overflow-hidden border border-sage/10">
+                    <button class="faq-question w-full text-left px-8 py-6 flex items-center justify-between hover:bg-sage/5 transition-colors">
+                        <span class="text-lg font-semibold text-forest pr-8">
+                            Can Ayurvedic medicines be taken alongside allopathic (modern) medications?
+                        </span>
+                        <i class="fas fa-chevron-down text-sage text-xl transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6">
+                        <p class="text-bark/80 leading-relaxed">
+                            Yes, in most cases. Ayurvedic herbs and formulations are designed to work <em>with</em> your body's
+                            natural healing mechanisms and are generally safe to use alongside conventional medications. However,
+                            it's crucial to inform me about <strong>all medications</strong> you're currently taking during your
+                            consultation. I'll ensure there are no contraindications and, when appropriate, work with your
+                            allopathic doctor to create a coordinated care plan. Many patients successfully reduce their dependency
+                            on allopathic drugs over time as Ayurvedic treatment addresses root causes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-gradient-to-br from-cream to-white rounded-2xl shadow-lg overflow-hidden border border-sage/10">
+                    <button class="faq-question w-full text-left px-8 py-6 flex items-center justify-between hover:bg-sage/5 transition-colors">
+                        <span class="text-lg font-semibold text-forest pr-8">
+                            How long does it typically take to see results?
+                        </span>
+                        <i class="fas fa-chevron-down text-sage text-xl transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6">
+                        <p class="text-bark/80 leading-relaxed">
+                            Healing timelines vary based on the condition, its severity, and how long it's been present.
+                            That said, most patients notice <strong>improvements within 2-4 weeks</strong>—better energy,
+                            digestion, sleep, or reduced symptoms. For chronic conditions like diabetes, fatty liver, or
+                            hypertension, meaningful reversal typically takes <strong>3-6 months</strong> of consistent treatment.
+                            Remember: Ayurveda focuses on <em>sustainable, root-level healing</em>, not just symptom suppression.
+                            The changes you make will serve you for life.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-gradient-to-br from-cream to-white rounded-2xl shadow-lg overflow-hidden border border-sage/10">
+                    <button class="faq-question w-full text-left px-8 py-6 flex items-center justify-between hover:bg-sage/5 transition-colors">
+                        <span class="text-lg font-semibold text-forest pr-8">
+                            Is online consultation as effective as in-person treatment?
+                        </span>
+                        <i class="fas fa-chevron-down text-sage text-xl transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6">
+                        <p class="text-bark/80 leading-relaxed">
+                            Absolutely. With modern technology, I can conduct thorough consultations via video call, including
+                            detailed discussions, visual assessment, and guidance on self-pulse diagnosis. Herbal medicines and
+                            dietary plans are shipped directly to you. For most lifestyle and liver disorders, online treatment
+                            is highly effective. However, if <strong>Panchakarma therapies</strong> (like Virechana or Basti)
+                            are recommended, you would need to visit the clinic in person. I'll guide you clearly on what's
+                            best for your specific case.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="bg-gradient-to-br from-cream to-white rounded-2xl shadow-lg overflow-hidden border border-sage/10">
+                    <button class="faq-question w-full text-left px-8 py-6 flex items-center justify-between hover:bg-sage/5 transition-colors">
+                        <span class="text-lg font-semibold text-forest pr-8">
+                            Are the herbal medicines safe? Do they have side effects?
+                        </span>
+                        <i class="fas fa-chevron-down text-sage text-xl transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6">
+                        <p class="text-bark/80 leading-relaxed">
+                            I use only <strong>authentic, high-quality Ayurvedic formulations</strong> sourced from reputable
+                            manufacturers who follow Good Manufacturing Practices (GMP). When prescribed correctly based on your
+                            constitution and condition, Ayurvedic herbs are extremely safe and work <em>in harmony</em> with your
+                            body. Unlike many synthetic drugs, they don't suppress symptoms—they restore balance. Side effects are
+                            rare and usually mild (like temporary digestive adjustment), and I monitor your progress closely to
+                            ensure optimal results and safety.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="bg-gradient-to-br from-cream to-white rounded-2xl shadow-lg overflow-hidden border border-sage/10">
+                    <button class="faq-question w-full text-left px-8 py-6 flex items-center justify-between hover:bg-sage/5 transition-colors">
+                        <span class="text-lg font-semibold text-forest pr-8">
+                            What is Panchakarma, and do I need it?
+                        </span>
+                        <i class="fas fa-chevron-down text-sage text-xl transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6">
+                        <p class="text-bark/80 leading-relaxed">
+                            <strong>Panchakarma</strong> is Ayurveda's signature detoxification and rejuvenation therapy. It includes
+                            procedures like therapeutic purgation (Virechana), medicated enemas (Basti), oil massage (Abhyanga),
+                            and steam therapy (Swedana) to eliminate deep-seated toxins (<em>Ama</em>) from the body. Not everyone
+                            needs Panchakarma—it's recommended for chronic, stubborn conditions or when toxin accumulation is
+                            significant. After your consultation and diagnosis, I'll let you know if it's beneficial for your case.
+                            Many patients achieve excellent results with herbs and lifestyle changes alone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Booking Section -->
+    <section id="contact" class="py-20 px-6 bg-gradient-to-br from-forest via-sage to-forest text-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <div class="mb-8">
+                <i class="fas fa-spa text-6xl text-gold mb-4"></i>
+            </div>
+
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Ready to Begin Your Healing Journey?
+            </h2>
+
+            <p class="text-xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Take the first step toward lasting health. Book a personalized consultation and discover how
+                Ayurveda can transform your life—naturally and sustainably.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                    <i class="fas fa-phone-alt text-gold text-3xl mb-3"></i>
+                    <h3 class="font-semibold text-lg mb-2">Call/WhatsApp</h3>
+                    <a href="tel:+919876543210" class="text-white/90 hover:text-gold transition-colors">
+                        +91 98765 43210
+                    </a>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                    <i class="fas fa-envelope text-gold text-3xl mb-3"></i>
+                    <h3 class="font-semibold text-lg mb-2">Email</h3>
+                    <a href="mailto:contact@sattvalyasaar.com" class="text-white/90 hover:text-gold transition-colors">
+                        contact@sattvalyasaar.com
+                    </a>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                    <i class="fas fa-map-marker-alt text-gold text-3xl mb-3"></i>
+                    <h3 class="font-semibold text-lg mb-2">Clinic Address</h3>
+                    <p class="text-white/90 text-sm">
+                        123 Wellness Lane<br/>
+                        Mumbai, Maharashtra 400001
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/919876543210" class="bg-gold hover:bg-gold/90 text-white px-10 py-4 rounded-full font-semibold text-lg shadow-2xl transition-all duration-300 inline-flex items-center">
+                    <i class="fab fa-whatsapp mr-3 text-2xl"></i>
+                    Book on WhatsApp
+                </a>
+                <a href="#" class="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-10 py-4 rounded-full font-semibold text-lg border-2 border-white/40 transition-all duration-300 inline-flex items-center">
+                    <i class="fas fa-calendar-alt mr-3"></i>
+                    Schedule Online
+                </a>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-white/20">
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="#" class="text-white/70 hover:text-gold transition-colors text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-gold transition-colors text-2xl">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-gold transition-colors text-2xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-gold transition-colors text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <p class="text-white/60 text-sm">
+                    <strong>Medical Disclaimer:</strong> Ayurveda is a holistic science focused on balancing the body's natural systems.
+                    Results vary by individual. This website is for informational purposes and does not replace professional medical advice.
+                    Always consult with qualified healthcare providers for your specific health concerns.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bark text-white/70 py-12 px-6">
+        <div class="container mx-auto max-w-7xl">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-white font-bold mb-4 flex items-center">
+                        <i class="fas fa-leaf text-gold mr-2"></i>
+                        Sattvalya Saar
+                    </h3>
+                    <p class="text-sm leading-relaxed hindi-text mb-2">सत्वल्य सार</p>
+                    <p class="text-sm leading-relaxed">
+                        Authentic Ayurvedic healing for lifestyle diseases and liver disorders.
+                        Guided by tradition, powered by compassion.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#treatments" class="hover:text-gold transition-colors">Treatments</a></li>
+                        <li><a href="#about" class="hover:text-gold transition-colors">About Vaidya Neha</a></li>
+                        <li><a href="#process" class="hover:text-gold transition-colors">Treatment Process</a></li>
+                        <li><a href="#stories" class="hover:text-gold transition-colors">Patient Stories</a></li>
+                        <li><a href="#faq" class="hover:text-gold transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Specializations</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#treatments" class="hover:text-gold transition-colors">Diabetes Management</a></li>
+                        <li><a href="#treatments" class="hover:text-gold transition-colors">Hypertension Care</a></li>
+                        <li><a href="#treatments" class="hover:text-gold transition-colors">Obesity Treatment</a></li>
+                        <li><a href="#treatments" class="hover:text-gold transition-colors">Fatty Liver Reversal</a></li>
+                        <li><a href="#treatments" class="hover:text-gold transition-colors">Panchakarma Therapy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Get in Touch</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-gold mt-1 mr-3"></i>
+                            <a href="tel:+919876543210" class="hover:text-gold transition-colors">+91 98765 43210</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-gold mt-1 mr-3"></i>
+                            <a href="mailto:contact@sattvalyasaar.com" class="hover:text-gold transition-colors">contact@sattvalyasaar.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-gold mt-1 mr-3"></i>
+                            <span>123 Wellness Lane<br/>Mumbai, MH 400001</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 text-center text-sm">
+                <p>&copy; 2026 Sattvalya Saar (सत्वल्य सार). All rights reserved. | Designed with <i class="fas fa-heart text-gold"></i> for healing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="fixed bottom-8 right-8 bg-gradient-to-br from-forest to-sage text-white w-12 h-12 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 opacity-0 pointer-events-none z-40">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Sticky Header on Scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+
+                // Close other open FAQs
+                faqQuestions.forEach(otherQuestion => {
+                    if (otherQuestion !== question) {
+                        otherQuestion.nextElementSibling.classList.add('hidden');
+                        otherQuestion.querySelector('i').style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                // Toggle current FAQ
+                answer.classList.toggle('hidden');
+
+                if (answer.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Scroll to Top Button
+        const scrollTopBtn = document.getElementById('scroll-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                scrollTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+            } else {
+                scrollTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                scrollTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for Fade-in Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements that should fade in
+        document.querySelectorAll('.hover-lift, .bg-gradient-to-br').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

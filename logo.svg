@@ -1,0 +1,48 @@
+<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Sattvalya Saar Lotus Logo -->
+    <!-- Forest Green Color: #2C4C3B -->
+
+    <!-- Center petal -->
+    <path d="M50 20 C50 20, 55 40, 50 55 C45 40, 50 20, 50 20"
+          fill="none"
+          stroke="#2C4C3B"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- Left petals -->
+    <path d="M35 30 C35 30, 42 45, 45 55 C42 45, 35 30, 35 30"
+          fill="none"
+          stroke="#2C4C3B"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <path d="M22 45 C22 45, 32 52, 38 58 C32 52, 22 45, 22 45"
+          fill="none"
+          stroke="#2C4C3B"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- Right petals -->
+    <path d="M65 30 C65 30, 58 45, 55 55 C58 45, 65 30, 65 30"
+          fill="none"
+          stroke="#2C4C3B"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <path d="M78 45 C78 45, 68 52, 62 58 C68 52, 78 45, 78 45"
+          fill="none"
+          stroke="#2C4C3B"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- Base -->
+    <ellipse cx="50" cy="60" rx="30" ry="8"
+             fill="none"
+             stroke="#2C4C3B"
+             stroke-width="2.5"/>
+</svg>

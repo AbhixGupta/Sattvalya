@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+</head>
+<body style="background: #f0f0f0; padding: 20px;">
+    <h1>Testing Vaidya Photo</h1>
+
+    <h2>Test 1: Relative path</h2>
+    <img src="vaidya-photo.jpg" alt="Test 1" style="width: 300px; border: 2px solid red;">
+
+    <h2>Test 2: With ./ prefix</h2>
+    <img src="./vaidya-photo.jpg" alt="Test 2" style="width: 300px; border: 2px solid blue;">
+
+    <h2>Test 3: Absolute path</h2>
+    <img src="/Users/abhisheg/Documents/Self/ayurveda/vaidya-photo.jpg" alt="Test 3" style="width: 300px; border: 2px solid green;">
+
+    <script>
+        // Log image load status
+        document.querySelectorAll('img').forEach((img, index) => {
+            img.onload = () => console.log(`Image ${index + 1} loaded successfully!`);
+            img.onerror = () => console.error(`Image ${index + 1} FAILED to load!`);
+        });
+    </script>
+</body>
+</html>
